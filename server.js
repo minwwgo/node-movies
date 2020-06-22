@@ -7,6 +7,8 @@ app.get("/", (req, res) => res.send("Hello Min's movies from API server"));
 app.get("/n", (req, res) => res.send("Hello Nader"));
 
 app.get("/f", (req, res) => res.send("Hello Ferhat"));
+
+// http://localhost:5555/search?q=moviename
 app.get("/search", (req, res) => {
   console.log(`We are searching for ${req.query.q}`);
   if (req.query.q) {
@@ -14,8 +16,8 @@ app.get("/search", (req, res) => {
       movie.movieName.toLowerCase().includes(req.query.q.toLowerCase())
     );
     res.send(movies);
-  }else{
-    res.send("No q parameter provided !")
+  } else {
+    res.send(400, "No q parameter provided !");
   }
 });
 //Example of query parameters in youtube url
