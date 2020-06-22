@@ -11,6 +11,7 @@
     "year": 1972,
     "rating": 9.2
   },
+  
   {
     "id": 30,
     "movieName": "Cast Away",
@@ -40,5 +41,20 @@
     "movieName": "Casino Royale",
     "year": 2006,
     "rating": 8
+
+  },
+  {
+    "id": 80,
+    "movieName": "Godfather two",
+    "year": 1994,
+    "rating": 9
+  },
+  {
+    "id": 80,
+    "movieName": "Godfather one",
+    "year": 1943,
+    "rating": 9
   }
+  
+
 ]
