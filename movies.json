@@ -53,5 +53,17 @@
     "movieName": "Godfather one",
     "year": 1972,
     "rating": 9
+  },
+  {
+    "id": 100,
+    "movieName": "Toy Story",
+    "year": 1995,
+    "rating": 8.3
+  },
+  {
+    "id": 110,
+    "movieName": "Murder Mystery",
+    "year": 2019,
+    "rating": 6
   }
 ]
