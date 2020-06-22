@@ -33,6 +33,15 @@ function handleRequestForAllMovies(request, response) {
 //    /movies?name=casino
 app.get("/movies", handleRequestForAllMovies);
 
+app.get('/movies/random', (req, res) => {
+  res.send(pick(favoriteMovies))
+})
+
+function pick (arr) {
+  const index = Math.floor(Math.random()* arr.length)
+  return arr[index]
+}
+
 app.get("/movies/:id", (req, res) => {
   const id = Number(req.params.id);
   const movie = favoriteMovies.find((movie) => movie.id === id);
