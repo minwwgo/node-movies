@@ -20,6 +20,11 @@ app.get("/search", (req, res) => {
     res.send(400, "No q parameter provided !");
   }
 });
+
+app.get("/movies/best", (req, res) => {
+  const movies = favoriteMovies.filter((movie) => movie.rating > 8.5);
+  res.send(movies);
+});
 //Example of query parameters in youtube url
 //https://www.youtube.com/watch?v=JAqfoq6G5UE&t=4m30s
 function handleRequestForAllMovies(request, response) {
