@@ -1,0 +1,34 @@
+ [
+    {
+       "id": 10,
+       "movieName": "Forest Gump",
+       "year": 1994,
+       "rating": 8.8
+     },
+     {
+       "id": 20,
+       "movieName": "Godfather",
+       "year": 1972,
+       "rating": 9.2
+     },
+     {
+       "id": 30,
+       "movieName": "Cast Away",
+       "year": 2001,
+       "rating": 7.8
+     },
+     {
+       "id": 40,
+       "movieName": "Schindler's List",
+       "year": 1994,
+       "rating": 8.9
+     },
+     {
+        "id": 50,
+        "movieName": "The last kingdom",
+        "year": 2015,
+        "rating": 8.4
+      }
+      
+   ]
+   
