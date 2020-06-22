@@ -38,5 +38,8 @@ app.get("/count", (req, res) => {
   res.send("count:" + favoriteMovies.length);
 });
 
-const myPort = 5555;
-app.listen(myPort, () => console.log(`Listening on port ${myPort}`));
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 5555;
+}
+app.listen(port, () => console.log(`Listening on port ${myPort}`));
