@@ -14,8 +14,8 @@ app.get("/search", (req, res) => {
       movie.movieName.toLowerCase().includes(req.query.q.toLowerCase())
     );
     res.send(movies);
-  }else{
-    res.send("No q parameter provided !")
+  } else {
+    res.send("No q parameter provided !");
   }
 });
 //Example of query parameters in youtube url
