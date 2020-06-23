@@ -1,8 +1,9 @@
 const express = require("express");
 const favoriteMovies = require("./movies.json");
+const cors = require('cors')
 const app = express();
-
-app.get("/", (req, res) => res.send("Hello Min's movies from API server"));
+app.use(cors())
+app.get("/", (req, res) => res.send("Hello Guys nodemon"));
 
 app.get("/n", (req, res) => res.send("Hello Nader"));
 
