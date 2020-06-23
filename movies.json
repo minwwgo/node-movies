@@ -65,5 +65,10 @@
     "movieName": "Murder Mystery",
     "year": 2019,
     "rating": 6
+  },{
+    "id": 120,
+    "movieName": "Joker",
+    "year": 2019,
+    "rating": 8.5
   }
 ]
